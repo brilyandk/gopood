@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<style>
+body {
+  font-family: Roboto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.text-p {
+  text-align: center;
+  margin-top: 15px;
+
+}
+
+.round{
+  border-radius: 100px;
+}
+
+.form-gojek {
+  border:none;
+
+}
+
+.form-gojek:focus {
+  border:none !important;
+  box-shadow: none !important;
+}
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+select::-ms-expand{
+  display: none !important;
+}
+
+.select-custom {
+  text-align: center;
+  padding-left: 5px;
+}
+
+select{
+  -webkit-appearance: none !important;
+  appearance: none !important;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="row fixed-bottom animated fadeIn" style="padding:25px; padding-bottom: 50px;">
+    <div class="col-xs-12 col-md-12">
+      <div class="row">
+      <div class="col-3">
+        <select name="" id="" class="form-control select-custom" style="padding:0px;">
+          <option value="">+62</option>
+        </select>
+      </div>
+      <div class="col-9">
+        <div class="form-group">
+          <input type="text" name="" id="" class="form-control form-gojek round" placeholder="No Telpon...." aria-describedby="helpId">
+        </div>
+      </div>
+
+    </div>
+      
+    </div>
+    <div class="col-xs-12 col-md-12">
+      <a name="login" id="login" class="btn btn-success btn-block round" href="#" role="button">login</a>
+    </div>
+    <div class="col-xs-12 col-md-12">
+      <p class="text-p">Silahkan Login</p>
+    </div>
+    <div class="col-xs-12 col-md-12">
+      <div class="row">
+        <div class="col-6">
+          <!-- <a name="fb" id="fb" class="btn btn-danger btn-block" href="#" role="button">Google</a> -->
+          <div class="fb-login-button" data-width="100" data-size="medium" data-button-type="login_with" data-layout="default" data-auto-logout-link="false" data-use-continue-as="false"></div>
+        </div>
+        <div class="col-6">
+          <a name="google" id="google" class="btn btn-danger btn-block" href="#" role="button">Google</a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v6.0&appId=602384600523332&autoLogAppEvents=1"></script>
+</body>
+
+</html>
