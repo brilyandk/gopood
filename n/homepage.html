@@ -18,6 +18,7 @@ body {
   text-align: center;
   margin-top: 15px;
 
+
 }
 
 .round{
@@ -206,7 +207,6 @@ select{
       }
 
       .section-kategori{
-        margin-top: 90px;
         margin-left: 10px;
       }
 
@@ -217,8 +217,16 @@ select{
         margin-right: 10px;
       }
 
+      .section-voucher{
+        margin-top: 90px;
+        margin-left: 15px;
+        margin-bottom: 20px;
+      }
 
-
+      .icon-svg{
+        width: 20px;
+        height: 20px;
+      }
 
 
 
@@ -259,10 +267,23 @@ select{
             </div>  
           </div>
 
+          <div class="d-flex section-voucher">
+            <div>
+              <img src="aset/pricetags 1.svg" class="icon-svg" alt=""> 
+            </div>
+            <div style="padding-left: 10px;"><p><b>Ada 2 voucher nganggur</b></p></div>
+            <div class="ml-auto" style="padding-right:15px;">
+              <a href="#" id="btn-voucher" class="btn btn-sm btn-outline-success round" style="font-size: 12px;padding: 4px 8px;">Lihat semua</a>
+            </div>
+          </div>
+
+          
           <div class="d-flex section-kategori">
-            <p class="tebal">Menu</p>
+            <p class="tebal">Kategori</p>
             <p class="ml-auto lihatsemua">Lihat semua</p>
           </div>
+          
+     
         
           <div class="scroll-horizontal-kat">
             <div class="kategori-group">
@@ -305,9 +326,24 @@ select{
             </div>  
           </div>
      
-
+          <div id="modalvoucher" class="row fixed-bottom animated slideInUp" style="display:none; background-color: whitesmoke; height: 255px; border-top:1px solid #ddd; box-shadow: 6px 0px 12px rgba(0, 0, 0, 0.25);">
+            
+          </div>
    
-
+          
 </body>
-
+<script>
+  function bukavoucher(event){
+    }
+    window.addEventListener('click', function(e){   
+  if (document.getElementById('btn-voucher').contains(
+      e.target
+    )){
+    document.getElementById("modalvoucher").style.display = 'block'; 
+    } else{
+   
+      document.getElementById("modalvoucher").style.display = 'none'; 
+  }
+});
+</script>
 </html>

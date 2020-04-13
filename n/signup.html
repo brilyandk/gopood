@@ -83,26 +83,41 @@ select{
   appearance: none !important;
 }
 
+.imgmedia{
+    height: auto;
+    width: 100%;
+    
+}
+
+@media only screen and (max-height: 568px) {
+  .paddingmedia{
+  padding:0px;
+
+}
+  .imgmedia{
+    height: 180px;
+    
+}
+}
 </style>
 </head>
 <body>
 <div class="container">
     <div class="d-flex justify-content-between">
-    <div class="ml-auto" style="margin: 15px;">
-      <img src="aset/indonesia.svg" width="30" height="30" style="margin-right: 8px;"  alt="">
-      <img src="aset/uk.svg" width="30" height="30" alt="">
+    <div class="ml-auto" style="margin: 15px; margin-right: 0px;">
+      <img src="aset/indonesia.svg" width="30" height="30" alt="">
     </div>
     </div>
     <div class="row">
       <div class="col-xs-12" style="margin-top: 20px; padding: 15px; text-align:center">
-        <img src="aset/undraw_mobile_login_ikmv.svg" class="img-fluid" alt="">
+        <img src="aset/undraw_mobile_login_ikmv.svg" class="img-fluid imgmedia" alt="">
         <p class="title">
         Selamat datang di GO-JEK!
         </p>
         <p>Mau pergi,makan,belanja,kirim barang,bayar ini itu dari segala kebutuhan lainnya?, GO-JEKin aja!</p>
       </div>
     </div>
-  <div class="row fixed-bottom animated fadeIn" style="padding:25px; padding-bottom: 50px;">
+  <div class="row animated fadeIn paddingmedia">
     <div class="col-xs-12 col-md-12" style="padding:0px 50px">
       <a name="login" id="login" class="btn btn-success btn-block round" href="homepage.html" role="button">Masuk</a>
     </div>
