@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome</title>
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Welcome;
+		--web-view-id: Welcome;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Welcome;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Welcome {
+		position: absolute;
+		width: 375px;
+		height: 812px;
+		background-color: rgba(255,255,255,1);
+		overflow: hidden;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Home.html;
+		cursor: pointer;
+		--web-view-name: Welcome;
+		--web-view-id: Welcome;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#lawrence_kayku_974651_unsplash {
+		position: absolute;
+		width: 541.333px;
+		height: 812px;
+		left: -83px;
+		top: 0px;
+		overflow: visible;
+	}
+	#Group_560 {
+		position: absolute;
+		width: 364px;
+		height: 195px;
+		left: 6px;
+		top: 280px;
+		overflow: visible;
+	}
+	#SeedPlant {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		width: 365px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Morganite;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 83px;
+		color: rgba(255,255,255,1);
+	}
+	#MOST_PLANTS_GROW_FROM_SEEDS {
+		position: absolute;
+		left: 65px;
+		top: 178px;
+		overflow: visible;
+		width: 235px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Morganite;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 13px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 1.07px;
+	}
+</style>
+
+</head>
+<body>
+<div id="Welcome" onclick="application.goToTargetView(event)">
+	<img id="lawrence_kayku_974651_unsplash" src="lawrence_kayku_974651_unsplash.png" srcset="lawrence_kayku_974651_unsplash.png 1x, lawrence_kayku_974651_unsplash@2x.png 2x">
+	<div id="Group_560">
+		<div id="SeedPlant">
+			<span>SeedPlant</span>
+		</div>
+		<div id="MOST_PLANTS_GROW_FROM_SEEDS">
+			<span>MOST PLANTS GROW FROM SEEDS</span>
+		</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+<style>
+body {
+  font-family: Roboto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.text-p {
+  text-align: center;
+  margin-top: 15px;
+
+}
+
+.round{
+  border-radius: 100px;
+}
+
+.form-gojek {
+  border:none;
+  background: transparent;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 19px;
+  margin-left: 2px;
+
+color: #FFFFFF;
+}
+
+.form-gojek:focus {
+  border:none !important;
+  box-shadow: none !important;
+}
+
+.labelcustom{
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  margin-left: 15px;
+  margin-top: 15px;
+
+color: #FFFFFF;
+}
+
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+.tombol {
+  border-color: #4CAF50;
+  border: 3px solid #4CAF50;
+  color: green;
+}
+
+.tombol:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.title{
+  font-size: 22px;
+  font-weight: 900;
+  margin-top: 35px; 
+  line-height: 20px; 
+  
+}
+
+.desc{
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 15px; 
+  line-height: 15px; 
+}
+
+.frame-header{
+  background: #D32030; 
+  margin: 0px; 
+  height: 227px; 
+}
+
+.promo{
+    position: absolute;
+    width: 312px;
+    height: 142px;
+    left: 8px;
+    top: 142px;
+
+    background: url('aset/tes.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+select::-ms-expand{
+  display: none !important;
+}
+
+.select-custom {
+  text-align: center;
+  padding-left: 5px;
+}
+
+select{
+  -webkit-appearance: none !important;
+  appearance: none !important;
+}
+
+
+ 
+.scroll-horizontal {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        display: block;
+        width: 100%;
+        position: absolute;
+        padding-left: 8px;
+        top: 142px;
+      }
+
+      .scroll-horizontal-kat {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        display: block;
+        width: 100%;
+        padding-left: 18px;
+      }
+      
+      .image-group {
+        white-space: nowrap;
+        width: auto;
+      }
+
+      .kategori-group {
+        white-space: nowrap;
+        width: auto;
+        height: 80px;
+
+      }
+      
+      .image-placeholer {
+        display: inline-block;
+        background: grey;
+        width: 312px;
+        height: 142px;
+        background: url('aset/tes.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin-right: 14px;
+      }
+
+    .bungkus-kategori{
+        display: inline-block;
+        width: 50px;
+        height: 60px;
+        text-align: center; 
+        margin-right: 10px;   
+        }
+
+      .frame-kategori {
+        display: inline-block;
+        background: #FFF0D1;
+        width: 50px;
+        height: 50px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding-top: 10px;
+        text-align: center;
+        border-radius: 10px;
+      }
+
+      .img-kategori{
+        width: 30px;
+        height: 30px;
+      }
+
+      .p-kategori{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 14px;  
+        margin-top: 10px;  
+      }
+
+      .tebal{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+      }
+
+      .section-kategori{
+        margin-top: 90px;
+        margin-left: 10px;
+      }
+
+      .lihatsemua{
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 14px;
+        margin-right: 10px;
+      }
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+ <div class="row frame-header">
+     <div class="col-7">
+     <label class="labelcustom" for="alamat">Alamat Pengantaran</label>
+     <input type="text" class="form-control form-gojek"  value="Jl.Suhat no 9">
+   </div>
+    <div class="col-5" style="text-align: right;padding: 15px;">
+      <img src="aset/indonesia.svg" width="30" height="30" style="margin-right: 8px;"  alt="">
+      <img src="aset/uk.svg" width="30" height="30" alt="">
+  </div>
+  
+
+ <div class="row" style="width: 100%; padding: 0px;margin-top: -66px;">
+  <div class="col-12" style="width: 100%; padding: 0px 35px;padding-right: 0px;">
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" placeholder="Mau makan apa hari ini?" style="background: #E9E9E9;">
+      <div class="input-group-append">
+        <span class="input-group-text" style="background: #E9E9E9; border-left: none; margin-left: -1px; z-index: 2;"><img src="aset/search.svg" width="20px" height="20px"  ></span>
+      </div>
+    </div>
+  </div>
+    </div>
+  
+</div>
+
+      
+          <div class="scroll-horizontal">
+            <div class="image-group">
+              <div class="image-placeholer"></div>
+              <div class="image-placeholer"></div>
+              <div class="image-placeholer"></div>
+            </div>  
+          </div>
+
+          <div class="d-flex section-kategori">
+            <p class="tebal">Menu</p>
+            <p class="ml-auto lihatsemua">Lihat semua</p>
+          </div>
+        
+          <div class="scroll-horizontal-kat">
+            <div class="kategori-group">
+              <div class="bungkus-kategori">
+              <div class="frame-kategori">
+                <img class="img-kategori" src="aset/chicken.svg" alt="">
+              </div>
+                <p class="p-kategori">Ayam</p>
+              </div>
+              <div class="bungkus-kategori">
+                <div class="frame-kategori">
+                  <img class="img-kategori" src="aset/chicken.svg" alt="">
+                </div>
+                  <p class="p-kategori">Ayam</p>
+                </div>
+                <div class="bungkus-kategori">
+                  <div class="frame-kategori">
+                    <img class="img-kategori" src="aset/chicken.svg" alt="">
+                  </div>
+                    <p class="p-kategori">Ayam</p>
+                  </div>
+                  <div class="bungkus-kategori">
+                    <div class="frame-kategori">
+                      <img class="img-kategori" src="aset/chicken.svg" alt="">
+                    </div>
+                      <p class="p-kategori">Ayam</p>
+                    </div>
+                    <div class="bungkus-kategori">
+                      <div class="frame-kategori">
+                        <img class="img-kategori" src="aset/chicken.svg" alt="">
+                      </div>
+                        <p class="p-kategori">Ayam</p>
+                      </div>
+                      <div class="bungkus-kategori">
+                        <div class="frame-kategori">
+                          <img class="img-kategori" src="aset/chicken.svg" alt="">
+                        </div>
+                          <p class="p-kategori">Ayam</p>
+                        </div>
+            </div>  
+          </div>
+     
+
+   
+
+</body>
+
+</html>
