@@ -99,7 +99,28 @@ select{
   </div>
 </div>
 <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v6.0&appId=602384600523332&autoLogAppEvents=1"></script>
 </body>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBFqs5jS6Pj0-gNJufPUu9yYKtCTPfR1TM",
+    authDomain: "gofood-prototype-1586306982570.firebaseapp.com",
+    databaseURL: "https://gofood-prototype-1586306982570.firebaseio.com",
+    projectId: "gofood-prototype-1586306982570",
+    storageBucket: "gofood-prototype-1586306982570.appspot.com",
+    messagingSenderId: "572300255960",
+    appId: "1:572300255960:web:05397bf07af75f30162dad",
+    measurementId: "G-LCCEJZQ7XR"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 </html>

@@ -159,7 +159,7 @@ select{
         background: grey;
         width: 312px;
         height: 142px;
-        background: url('aset/tes1.png');
+        background: url('aset/tes1.svg');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -210,6 +210,12 @@ select{
         margin-left: 10px;
       }
 
+      .section-rekom{
+        margin-left: 10px;
+        margin-top: 15px;
+
+      }
+
       .lihatsemua{
         font-weight: normal;
         font-size: 12px;
@@ -228,15 +234,79 @@ select{
         height: 20px;
       }
 
+      .p-16{
+        font-size: 16px;
+      }
 
+      .bungkus-rekom{
+        display: inline-block;
+        width: auto;
+        height: 35px;
+        text-align: center; 
+        margin-right: 10px;   
+      }
 
+      .menu-active{
+        color: #24AE5F;
+      }
 
+      .scroll-horizontal-rekom{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        display: block;
+        width: 100%;
+        height: 265px;
+        margin-bottom: 300px;
+        padding-left: 8px;
+        
+      }
+
+      .image-group-rekom{
+        white-space: nowrap;
+        width: auto;
+      }
+
+      .image-rekom{
+        display: inline-block;
+        width: 184px;
+        height: 239px;
+        /* background: url('aset/huynh-quyet-YgirePmHPZU-unsplash.jpg'); */
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('aset/huynh-quyet-YgirePmHPZU-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        margin-right: 14px;
+      }
+
+      .rekom-bg{
+        display: inline-block;
+        position: absolute;
+        border-radius: 10px;
+        margin-right: 14px;
+        width: 169px;
+        height: 70px;
+        left: 15px;
+        bottom: -194px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+      }
+
+      .p-rekom{
+        color: white; 
+        margin-bottom: 5px; 
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+      }
 </style>
 </head>
 <body>
  <div class="row frame-header">
      <div class="col-7">
-     <label class="labelcustom" for="alamat">Alamat Pengantaran</label>
+     <label class="labelcustom" for="alamat">Lokasi Kamu</label>
      <input type="text" class="form-control form-gojek"  value="Jl.Suhat no 9">
    </div>
     <div class="col-5" style="text-align: right;padding: 15px;">
@@ -273,14 +343,14 @@ select{
             </div>
             <div style="padding-left: 10px;"><p><b>Ada 2 voucher nganggur</b></p></div>
             <div class="ml-auto" style="padding-right:15px;">
-              <a href="#" id="btn-voucher" class="btn btn-sm btn-outline-success round" style="font-size: 12px;padding: 4px 8px;">Lihat semua</a>
+              <a href="#" id="btn-voucher" class="animated heartBeat infinite slower btn btn-sm btn-outline-success round" style="font-size: 12px;padding: 4px 8px;">Lihat semua</a>
             </div>
           </div>
 
           
           <div class="d-flex section-kategori">
             <p class="tebal">Kategori</p>
-            <p class="ml-auto lihatsemua">Lihat semua</p>
+            <a href="kategori.html" class="ml-auto lihatsemua">Lihat semua</a>
           </div>
           
      
@@ -325,8 +395,63 @@ select{
                         </div>
             </div>  
           </div>
+
+                    
+          <div class="d-flex section-rekom">
+            <p class="tebal" style="margin-bottom: 8px;">Rekomendasi buat kamu...</p>
+          </div>
+
+          <div class="scroll-horizontal-kat">
+            <div class="kategori-group" style="height: 35px;">
+              <div class="bungkus-rekom">
+                <p class="p-kategori menu-active p-16"><b>Menu Baru</b></p>
+              </div>
+              <div class="bungkus-rekom">
+                <p class="p-kategori p-16"><b>Promo</b></p>
+              </div>
+              <div class="bungkus-rekom">
+                <p class="p-kategori p-16"><b>Terfavorit</b></p>
+              </div>
+              <div class="bungkus-rekom">
+                <p class="p-kategori p-16"><b>Terdekat</b></p>
+              </div>
+              <div class="bungkus-rekom">
+                <p class="p-kategori p-16"><b>Terlaris</b></p>
+              </div>
+              <div class="bungkus-rekom">
+                <p class="p-kategori p-16"><b>24 Jam</b></p>
+              </div>
+              </div>
+          </div>
+
+          <div class="scroll-horizontal-rekom">
+            <div class="image-group-rekom">
+              <div class="image-rekom">
+                <div style="margin-top: 145px;">
+                  <p class="p-rekom">Es Greentea, Rp. 10.000</p> 
+                  <p class="p-rekom">Pesen Kopi, Lowokwaru</p>
+                </div>
+                <div class="rekom-bg" style="padding-left: 4px; padding-top: 8px;">
+                  <p style="margin-bottom: 5px;"> <img src="aset/pin (2) 1.svg" alt=""> 0.4 km (32 min)</p>
+                  <p style="margin-bottom: 5px;"> <img src="aset/Layer 2.svg" alt=""> 4.5 Minuman, Kopi</p></div>
+                </div> 
+              </div>
+              <div class="image-rekom">
+                <div style="margin-top: 145px;">
+                  <p class="p-rekom">Es Greentea, Rp. 10.000</p> 
+                  <p class="p-rekom">Pesen Kopi, Lowokwaru</p>
+                </div>
+                <div class="rekom-bg" style="padding-left: 4px; padding-top: 8px;">
+                  <p style="margin-bottom: 5px;"> <img src="aset/pin (2) 1.svg" alt=""> 0.4 km (32 min)</p>
+                  <p style="margin-bottom: 5px;"> <img src="aset/Layer 2.svg" alt=""> 4.5 Minuman, Kopi</p></div>
+                </div> 
+              </div>
+          </div>
+        
+          
+          
      
-          <div id="modalvoucher" class="row fixed-bottom animated slideInUp" style="display:none; background-color: whitesmoke; height: 255px; border-top:1px solid #ddd; box-shadow: 6px 0px 12px rgba(0, 0, 0, 0.25);">
+          <div id="modalvoucher" class="row fixed-bottom animated slideInUp" style="display:none; background-color: whitesmoke; height: 260px; border-top:1px solid #ddd; box-shadow: 6px 0px 12px rgba(0, 0, 0, 0.25);">
             
           </div>
    
